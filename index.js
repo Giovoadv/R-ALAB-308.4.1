@@ -1,3 +1,5 @@
+// Part 1: CREATING TABLE
+
 const csv =
   "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26";
 const csv2 =
@@ -25,6 +27,7 @@ const csvParser = (csv) => {
 
   return table;
 };
+// PART 2: TRANSFORMING DATA
 
 const transformingData = (table) => {
   const result = [];
@@ -43,7 +46,7 @@ const transformingData = (table) => {
   }
   return result;
 };
-
+//PART 3: UPDATING TABLE
 const manipulatingData = (data) => {
   const tableData = [...data];
   const obj = { ID: "48", Name: "Barry", Occupation: "Runner", Age: "25" };
@@ -54,7 +57,7 @@ const manipulatingData = (data) => {
 
   return tableData;
 };
-
+// PART 4: CALCULATING AVERAGE
 const calculateAvg = (data) => {
   let sum = 0;
   for (const props of data) {
@@ -79,7 +82,7 @@ const calculateAvg = (data) => {
 
   // return average;
 };
-
+// PART 5: RETURNING DATA BACK TO CSV FORMAT
 const fullCircle = (data) => {
   let result = "";
   let keys = data[0];
